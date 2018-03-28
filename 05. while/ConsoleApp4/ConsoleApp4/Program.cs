@@ -17,6 +17,7 @@ namespace ConsoleApp4
             if (choose1 == 1)
             {
                 Console.WriteLine("Ты просидел в Доте до утра, и принцессу спас другой хакер");
+                Console.ReadLine();
                 Environment.Exit(0);
             }
             else if (choose1 == 2)
@@ -24,13 +25,14 @@ namespace ConsoleApp4
                 Console.WriteLine("Следующий фрейм.");
             }
             Console.WriteLine("Рассказывается, что принцессе пришло письмо с рекламой суперстойкой помады, и там был баннер со ссылкой на сайт dontclickme.noob. Варианты поведения:");
-            Console.WriteLine("1. Послушаться совета в адресе сайта и поиграть в Доту (конец игры, проигрыш - другой хакер спас принцессу");
+            Console.WriteLine("1. Послушаться совета в адресе сайта и поиграть в Доту ");
             Console.WriteLine("2. Перейти на сайт");
             Console.WriteLine("3. Обновить антивирус, а потом перейти на сайт");
             int choose2 = int.Parse(Console.ReadLine());
             if (choose2 <= 2)
             {
-                Console.WriteLine("ты проиграл");
+                Console.WriteLine("конец игры, проигрыш - другой хакер спас принцессу");
+                Console.ReadLine();
                 Environment.Exit(0);
             }
             else if (choose2 == 3)
@@ -45,6 +47,7 @@ namespace ConsoleApp4
             if (choose3 >= 2)
             {
                 Console.WriteLine("Ты проиграл");
+                Console.ReadLine();
                 Environment.Exit(0);
             }
             else if (choose3 == 1)
@@ -59,6 +62,7 @@ namespace ConsoleApp4
             if (choose4 <= 2)
             {
                 Console.WriteLine("ты проиграл");
+                Console.ReadLine();
                 Environment.Exit(0);
             }
             else if (choose4 == 3)
@@ -72,6 +76,7 @@ namespace ConsoleApp4
             if (choose5 == 2)
             {
                 Console.WriteLine("Ты проиграл");
+                Console.ReadLine();
                 Environment.Exit(0);
             }
             else if (choose5 == 1)
@@ -85,6 +90,7 @@ namespace ConsoleApp4
             if (choose6 == 1)
             {
                 Console.WriteLine("Ты проиграл");
+                Console.ReadLine();
                 Environment.Exit(0);
             }
             else if (choose6 == 2)
