@@ -18,12 +18,17 @@ namespace LoopyLandscape {
 		protected override void OnPaint(PaintEventArgs e) {
 			graphics = e.Graphics;
 			graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-
-			// шар
-			graphics.FillEllipse(Brushes.Violet, 30, 50, 46, 66); // первая пара чисел - координаты, вторая - ширина и высота
-			// нитка
-			graphics.DrawLine(Pens.BlueViolet, 53, 116, 210, 300); // первая пара чисел - координаты начала отрезка, вторая - координаты конца
-
+            int x = 30;
+            int xx = 53;
+            for (int i = 1; i <= 6; i++)
+            {
+                // шар
+                graphics.FillEllipse(Brushes.Violet, x, 50, 46, 66); // первая пара чисел - координаты, вторая - ширина и высота
+                // нитка
+                graphics.DrawLine(Pens.BlueViolet, xx, 116, 210, 300); // первая пара чисел - координаты начала отрезка, вторая - координаты конца
+                x = x + 60;
+                xx = xx + 60;
+            }
 			// бобр
 			DrawHopper(208, 240);
 		}

@@ -20,14 +20,15 @@ namespace LoopyLandscape {
 			graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 
 			Pen pen = new Pen(Brushes.BlueViolet, 8);
-			// Упростите код с помощью цикла for
-			graphics.DrawLine(pen, 20, 40, 80, 80); // первая пара чисел - координаты начала отрезка, вторая - координаты конца
-			graphics.DrawLine(pen, 80, 40, 140, 80);
-			graphics.DrawLine(pen, 140, 40, 200, 80);
-			graphics.DrawLine(pen, 200, 40, 260, 80);
-			graphics.DrawLine(pen, 260, 40, 320, 80);
-			graphics.DrawLine(pen, 320, 40, 380, 80);
-			graphics.DrawLine(pen, 380, 40, 440, 80);
+            // Упростите код с помощью цикла for
+            int y = 20;
+            int yy = 80;
+            for (int i = 1; i <= 7; i++)
+            {
+                graphics.DrawLine(pen, y, 40, yy, 80); // первая пара чисел - координаты начала отрезка, вторая - координаты конца
+                y = y + 60;
+                yy = yy + 60;
+            }
 		}
 	}
 }
